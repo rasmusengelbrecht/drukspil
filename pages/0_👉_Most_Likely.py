@@ -1,65 +1,90 @@
 import streamlit as st
 
+st.set_page_config(page_title="Most Likely", page_icon=":point_right:")
 
-def animation_demo() -> None:
+st.markdown(
+    """
+        # Most Likely
 
-    # Interactive Streamlit elements, like these sliders, return their value.
-    # This gives you an extremely simple interaction model.
-    iterations = st.sidebar.slider("Level of detail", 2, 20, 10, 1)
-    separation = st.sidebar.slider("Separation", 0.7, 2.0, 0.7885)
+        En fremragende leg at spille med folk, du ikke kender, eller lige har mødt... Fremragende for rejsende! Du skal være ret kreativ med dine spørgsmål, og vær ikke genert, når spørgsmålene til sidst bliver seksuelle... Jeg har aldrig spillet et spil, hvor det ikke er sket!
 
-    # Non-interactive elements return a placeholder to their location
-    # in the app. Here we're storing progress_bar to update it later.
-    progress_bar = st.sidebar.progress(0)
+        Hvis du er nogen, der virker ret eventyrlysten/klodset/gal/festlig, ender du måske med at drikke meget i dette spil. Jeg håber, du har masser af alkohol klar, bare i tilfælde af.
 
-    # These two elements will be filled in later, so we create a placeholder
-    # for them using st.empty()
-    frame_text = st.sidebar.empty()
-    image = st.empty()
+        #### DET SKAL DU BRUGE:
 
-    m, n, s = 960, 640, 400
-    x = np.linspace(-m / s, m / s, num=m).reshape((1, m))
-    y = np.linspace(-n / s, n / s, num=n).reshape((n, 1))
+        - Alkohol
+        - Kreativitet
+        - En beskidt tanke, hvis du vil have, at spillet skal være sjovt
 
-    for frame_num, a in enumerate(np.linspace(0.0, 4 * np.pi, 100)):
-        # Here were setting value for these two elements.
-        progress_bar.progress(frame_num)
-        frame_text.text("Frame %i/100" % (frame_num + 1))
-
-        # Performing some fractal wizardry.
-        c = separation * np.exp(1j * a)
-        Z = np.tile(x, (n, 1)) + 1j * np.tile(y, (1, m))
-        C = np.full((n, m), c)
-        M: Any = np.full((n, m), True, dtype=bool)
-        N = np.zeros((n, m))
-
-        for i in range(iterations):
-            Z[M] = Z[M] * Z[M] + C[M]
-            M[np.abs(Z) > 2] = False
-            N[M] = i
-
-        # Update the image placeholder by calling the image() function on it.
-        image.image(1.0 - (N / N.max()), use_column_width=True)
-
-    # We clear elements by calling empty on them.
-    progress_bar.empty()
-    frame_text.empty()
-
-    # Streamlit widgets automatically run the script from top to bottom. Since
-    # this button is not connected to any other logic, it just causes a plain
-    # rerun.
-    st.button("Re-run")
-
-
-st.set_page_config(page_title="Animation Demo", page_icon="📹")
-st.markdown("# Animation Demo")
-st.sidebar.header("Animation Demo")
-st.write(
-    """This app shows how you can use Streamlit to build cool animations.
-It displays an animated fractal based on the the Julia Set. Use the slider
-to tune different parameters."""
+    """
 )
 
-animation_demo()
+with st.expander("Regler"):
+    st.markdown(
+        """
+            #### REGLERNE:
 
-show_code(animation_demo)
+            1. Alle sidder i en cirkel med en drink eller tre, og en spiller stiller et "mest sandsynligt" spørgsmål. f.eks. "Hvem er mest sandsynligvis til at skade sig selv ved at spille bordtennis?" eller "Hvem er mest sandsynligvis til at komme i problemer med politiet for blotteri?"
+
+            2. På tælling af 3 peger alle på den person, de tror, ville være mest tilbøjelig til at gøre, hvad der blev nævnt.
+
+            3. Du skal tage 1 drink for hver person, der peger på dig. Så hvis 5 personer tror, at du er mest tilbøjelig til at komme i problemer med politiet for blotteri, skal du tage 5 drinks.
+
+            En fantastisk leg at spille med folk, du lige har mødt, for at bryde isen, og vær ikke overrasket, hvis de "mest sandsynlige" spørgsmål bliver seksuelle... Det sker altid.
+
+            #### REGLERNE I BIDESTØRRELSE:
+
+            1. Alle sidder i en cirkel.
+            2. Spillere skiftes til at stille et "mest sandsynligt" spørgsmål, f.eks. "Hvem er mest sandsynligvis til at brække deres tå?"
+            3. På tælling af 3 peger alle på nogen, de tror er mest tilbøjelig til at gøre, hvad der blev nævnt.
+            4. For hver person, der peger på dig, tager du 1 drink. Så hvis 7 personer tror, at du er mest tilbøjelig til at brække din tå, skal du tage 7 drinks.
+
+    """
+)
+    
+import streamlit as st
+import random
+
+statements = [
+    "Most likely to get lost in their own hometown?",
+    "Most likely to get caught skinny dipping?",
+    "Most likely to get an embarrassing tattoo?",
+    "Most likely to become a crazy cat lady?",
+    "Most likely to eat something off the ground?",
+    "Most likely to give their kid an unusual (*cough* ridiculous *cough*) name?",
+    "Most likely to get arrested for urinating in public?",
+    "Most likely to have a foot fetish?",
+    "Most likely to let rip in public?",
+    "Most likely to get arrested for being drunk and disorderly?",
+    "Most likely to lock themselves out of the house?",
+    "Most likely to stay in the bathroom the longest (we don't need to know what you're doing!)?",
+    "Most likely to order a takeaway in the next 24 hours?",
+    "Most likely to pull a sickie due to a hangover?",
+    "Most likely to say something stupid on a first date?",
+    "Most likely to own the most pets?",
+    "Most likely to lose their phone on a night out?",
+    "Most likely to stack it on a night out?",
+    "Most likely to snore so badly their partner sleeps on the sofa?",
+    "Most likely to have used fake I.D. to buy booze?"
+]
+
+# Use set to keep track of displayed statements
+displayed_statements = set()
+
+def get_random_statement():
+    # Check if all statements have been displayed, reset if necessary
+    if len(displayed_statements) == len(statements):
+        displayed_statements.clear()
+    
+    # Get a random statement that hasn't been displayed yet
+    statement = random.choice([s for s in statements if s not in displayed_statements])
+    
+    # Add the statement to the set of displayed statements
+    displayed_statements.add(statement)
+    
+    return statement
+
+# Button to display a random statement
+if st.button("Nyt udsagn "):
+    random_statement = get_random_statement()
+    st.write(f"{random_statement}")
