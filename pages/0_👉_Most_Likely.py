@@ -85,6 +85,6 @@ def get_random_statement():
     return statement
 
 # Button to display a random statement
-if st.button("Nyt udsagn "):
+if st.button("Nyt udsagn :new:"):
     random_statement = get_random_statement()
-    st.write(f"{random_statement}")
+    st.info(f"{random_statement}")
