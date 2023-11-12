@@ -17,7 +17,7 @@ def run():
         """
         Drukspil er en gratis platform med danske drukspil du kan bruge fra mobilen, lige når du har brug for dem.
         
-        **👈 Vælg et spil i menuen** for at komme i gang!
+        **Vælg et spil i menuen** for at komme i gang!
 
         ### Vores spil:
     """
