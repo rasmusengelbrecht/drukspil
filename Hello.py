@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit_extras
 from streamlit.logger import get_logger
 from streamlit_extras.switch_page_button import switch_page 
 
