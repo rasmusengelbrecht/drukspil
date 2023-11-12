@@ -11,19 +11,8 @@ st.markdown(
     """
 )
 
-@st.cache_data
-def read_file_from_url(url):
-    headers = {
-        "User-Agent": "StreamlitDocs/1.5.0 (https://docs.streamlit.io; hello@streamlit.io)"
-    }
-    return requests.get(url, headers=headers).content
 
-
-file_bytes = read_file_from_url(
-    "https://soundcloud.com/eric-prydz/eric-prydz-opus?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
-)
-
-st.audio(file_bytes, format="audio/ogg")
+st.video("https://www.youtube.com/watch?v=oo9y-ndmjrs&ab_channel=RogerMendez")
 
 
 with st.expander("Regler"):
