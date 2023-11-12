@@ -20,7 +20,7 @@ def read_file_from_url(url):
 
 
 file_bytes = read_file_from_url(
-    "https://youtu.be/iRA82xLsb_w?si=mGEYeaozNuWfrU-O"
+    "https://github.com/rasmusengelbrecht/drukspil/blob/568f4a189ac08e23d75f89a534f97d18e65fae5c/.devcontainer/opus.ogg"
 )
 
 st.audio(file_bytes, format="audio/ogg")
