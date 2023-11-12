@@ -108,7 +108,8 @@ statements = [
     "Hvem her er mest tilbøjelig til at vinde i gokart?",
     "Hvem her er mest tilbøjelig til at være den første på dansegulvet?",
     "Hvem her er mest tilbøjelig til at få en drink købt til dem?",
-    "Hvem her er mest tilbøjelig til at vågne op uden tømmermænd?"
+    "Hvem her er mest tilbøjelig til at vågne op uden tømmermænd?",
+    "Hvem her er mest tilbøjelig til at melde sig til Paradise Hotel?"
 ]
 
 # Function to get a random statement that hasn't been displayed yet
