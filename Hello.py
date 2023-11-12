@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit.logger import get_logger
+from streamlit_extras.switch_page_button import switch_page 
 
 LOGGER = get_logger(__name__)
 
@@ -18,14 +19,29 @@ def run():
         
         **👈 Vælg et spil i menuen** for at komme i gang!
 
-        ### Værd at vide
-        - Check out [streamlit.io](https://streamlit.io)
-        - Jump into our [documentation](https://docs.streamlit.io)
-        - Ask a question in our [community
-          forums](https://discuss.streamlit.io)
+        ### Vores spil:
     """
     )
 
+    col1, col2, col3 = st.columns(3)
+
+    with col1:
+        hvem = st.button("👉 Spil Hvem Her..")
+        if hvem:
+            switch_page("hvem her")    
+
+        vandfald = st.button("💧 Spil Vandfald")
+        if vandfald:
+            switch_page("vandfald")    
+
+    with col2:
+        opus = st.button("🎲 Spil Opus")
+        if opus:
+            switch_page("opus")    
+
+        træmand = st.button("🌳 Spil Træmand")
+        if træmand:
+            switch_page("træmand")
 
 if __name__ == "__main__":
     run()
