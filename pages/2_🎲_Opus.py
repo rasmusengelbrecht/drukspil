@@ -1,5 +1,6 @@
 import streamlit as st
-import requests
+import random
+import time
 
 st.set_page_config(page_title="Opus", page_icon=":game_die:")
 
@@ -11,8 +12,22 @@ st.markdown(
     """
 )
 
+with st.expander("Start musikken"):
+    st.video("https://www.youtube.com/watch?v=jv18kaukcfk&ab_channel=An1ka101")
 
-st.video("https://www.youtube.com/watch?v=jv18kaukcfk&ab_channel=An1ka101")
+def roll_dice():
+    return random.randint(1, 6)
+
+col1, col2, col3 = st.columns(3)
+
+# Button to roll the dice
+if col2.button("Rul terningen"):
+    time.sleep(2)
+    result = roll_dice()
+    if result == 6:
+        st.success(f"Juhuu! 🎉 Du slog {result} - Send den videre")
+    else:
+        st.error(f"Øv.. Du slog {result} 😔 Prøv igen!")
 
 
 with st.expander("Regler"):
