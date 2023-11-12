@@ -20,7 +20,7 @@ def read_file_from_url(url):
 
 
 file_bytes = read_file_from_url(
-    "https://github.com/rasmusengelbrecht/drukspil/blob/568f4a189ac08e23d75f89a534f97d18e65fae5c/.devcontainer/opus.ogg"
+    "https://soundcloud.com/eric-prydz/eric-prydz-opus?utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing"
 )
 
 st.audio(file_bytes, format="audio/ogg")
