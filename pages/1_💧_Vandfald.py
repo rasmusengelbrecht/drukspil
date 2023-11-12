@@ -1,17 +1,17 @@
 import streamlit as st
 import random
 
-st.set_page_config(page_title="Hvem Her", page_icon=":point_right:")
+st.set_page_config(page_title="Vandfald", page_icon=":droplet:")
 
 st.markdown(
     """
-        # Hvem Her?
+        # Vandfald?
 
         Peg på den deltager som passer bedst til udsagnet, den med flest stemmer, drikker det antal slurke som vedkommende har modtaget stemmer. **Prøv et udsagn her :point_down:**
     """
 )
 
-statements = [
+cards = [
     "Hvem her er mest tilbøjelig til at fare vild i deres eget hjemby?",
     "Hvem her er mest tilbøjelig til at blive taget i at bade nøgen?",
     "Hvem her er mest tilbøjelig til at få en pinlig tatovering?",
@@ -113,21 +113,21 @@ statements = [
 
 # Function to get a random statement that hasn't been displayed yet
 def get_random_statement():
-    # Retrieve or initialize the displayed statements for the current session
-    displayed_statements = st.session_state.get("displayed_statements", [])
+    # Retrieve or initialize the displayed cards for the current session
+    displayed_cards = st.session_state.get("displayed_cards", [])
 
-    # Check if all statements have been displayed
-    if len(displayed_statements) == len(statements):
-        return None  # Return None to indicate no more statements
+    # Check if all cards have been displayed
+    if len(displayed_cards) == len(cards):
+        return None  # Return None to indicate no more cards
 
     # Get a random statement that hasn't been displayed yet
-    statement = random.choice([s for s in statements if s not in displayed_statements])
+    statement = random.choice([s for s in cards if s not in displayed_cards])
 
-    # Add the statement to the set of displayed statements
-    displayed_statements.append(statement)
+    # Add the statement to the set of displayed cards
+    displayed_cards.append(statement)
 
-    # Update the displayed statements in the session state
-    st.session_state.displayed_statements = displayed_statements
+    # Update the displayed cards in the session state
+    st.session_state.displayed_cards = displayed_cards
 
     return statement
 
