@@ -5,114 +5,57 @@ st.set_page_config(page_title="Vandfald", page_icon=":droplet:")
 
 st.markdown(
     """
-        # Vandfald?
+        # Vandfald
 
-        Peg på den deltager som passer bedst til udsagnet, den med flest stemmer, drikker det antal slurke som vedkommende har modtaget stemmer. **Prøv et udsagn her :point_down:**
+        Spillerne trækker på skift et "kort", og følger anvisningerne for kortet. **Træk et kort her :point_down:**
     """
 )
 
 cards = [
-    "Hvem her er mest tilbøjelig til at fare vild i deres eget hjemby?",
-    "Hvem her er mest tilbøjelig til at blive taget i at bade nøgen?",
-    "Hvem her er mest tilbøjelig til at få en pinlig tatovering?",
-    "Hvem her er mest tilbøjelig til at blive en skør katte dame?",
-    "Hvem her er mest tilbøjelig til at spise noget fra jorden?",
-    "Hvem her er mest tilbøjelig til at give deres barn et usædvanligt (*host* latterligt *host*) navn?",
-    "Hvem her er mest tilbøjelig til at blive anholdt for at tisse offentligt?",
-    "Hvem her er mest tilbøjelig til at have en fod fetish?",
-    "Hvem her er mest tilbøjelig til at slippe en prut offentligt?",
-    "Hvem her er mest tilbøjelig til at blive anholdt for at være fuld og uordenlig?",
-    "Hvem her er mest tilbøjelig til at låse sig selv ude af huset?",
-    "Hvem her er mest tilbøjelig til at blive i badeværelset længst tid (vi behøver ikke at vide, hvad du laver!)?",
-    "Hvem her er mest tilbøjelig til at bestille takeout inden for de næste 24 timer?",
-    "Hvem her er mest tilbøjelig til at tage en fridag på grund af tømmermænd?",
-    "Hvem her er mest tilbøjelig til at sige noget dumt på første date?",
-    "Hvem her er mest tilbøjelig til at eje flest kæledyr?",
-    "Hvem her er mest tilbøjelig til at miste deres telefon på en bytur?",
-    "Hvem her er mest tilbøjelig til at falde om på en bytur?",
-    "Hvem her er mest tilbøjelig til at snorke så meget, at deres partner sover på sofaen?",
-    "Hvem her er mest tilbøjelig til at have brugt en falsk ID for at købe alkohol?",
-    "Hvem her er mest tilbøjelig til at date to fyre på én gang?",
-    "Hvem her er mest tilbøjelig til at gå i seng med nogen på første date?",
-    "Hvem her er mest tilbøjelig til at glemme navnet på en person, de har været sammen med?",
-    "Hvem her er mest tilbøjelig til at have et engangsliggende?",
-    "Hvem her er mest tilbøjelig til at blive taget i at kysse med nogen offentligt?",
-    "Hvem her er mest tilbøjelig til at falde i søvn under sex?",
-    "Hvem her er mest tilbøjelig til at prøve en trekant?",
-    "Hvem her er mest tilbøjelig til at have noget kørende med deres chef?",
-    "Hvem her er mest tilbøjelig til at blive taget i at være sammen med deres eks?",
-    "Hvem her er mest tilbøjelig til at bygge et sex-dungeon?",
-    "Hvem her er mest tilbøjelig til at tage det første skridt?",
-    "Hvem her er mest tilbøjelig til at gå i seng med en kollega?",
-    "Hvem her er mest tilbøjelig til at besøge en stripklub?",
-    "Hvem her er mest tilbøjelig til at være into BDSM?",
-    "Hvem her er mest tilbøjelig til at onanere et offentligt sted?",
-    "Hvem her er mest tilbøjelig til at lave en sexvideo?",
-    "Hvem her er mest tilbøjelig til ikke at bruge beskyttelse?",
-    "Hvem her er mest tilbøjelig til at blive taget i at se porno?",
-    "Hvem her er mest tilbøjelig til at snyde deres partner?",
-    "Hvem her er mest tilbøjelig til at stønne højst under sex?",
-    "Hvem her er mest tilbøjelig til at blive en TikTok-stjerne?",
-    "Hvem her er mest tilbøjelig til at blive millionær?",
-    "Hvem her er mest tilbøjelig til at have flest børn?",
-    "Hvem her er mest tilbøjelig til at slå en verdensrekord?",
-    "Hvem her er mest tilbøjelig til at ende i fængsel?",
-    "Hvem her er mest tilbøjelig til at blive politiker?",
-    "Hvem her er mest tilbøjelig til at melde sig til hæren?",
-    "Hvem her er mest tilbøjelig til at tage ud i rummet?",
-    "Hvem her er mest tilbøjelig til at opsige deres job og rejse jorden rundt?",
-    "Hvem her er mest tilbøjelig til at blive berømt?",
-    "Hvem her er mest tilbøjelig til at leve længst?",
-    "Hvem her er mest tilbøjelig til at ødelægge en jobsamtale?",
-    "Hvem her er mest tilbøjelig til at få en PhD?",
-    "Hvem her er mest tilbøjelig til at gifte sig ind i den kongelige familie?",
-    "Hvem her er mest tilbøjelig til at optræde i en reality-tv-show?",
-    "Hvem her er mest tilbøjelig til at skrive en bog?",
-    "Hvem her er mest tilbøjelig til at blive komiker?",
-    "Hvem her er mest tilbøjelig til at gå bankerot?",
-    "Hvem her er mest tilbøjelig til at trække sig tidligt tilbage?",
-    "Hvem her er mest tilbøjelig til at blive gift mere end én gang?",
-    "Hvem her er mest tilbøjelig til at slippe afsted med mord?",
-    "Hvem her er mest tilbøjelig til at være den favoriserede søskende?",
-    "Hvem her er mest tilbøjelig til at skuffe deres venner for at flirte med en fremmed?",
-    "Hvem her er mest tilbøjelig til at dø først, hvis I var med i en gyserfilm?",
-    "Hvem her er mest tilbøjelig til at blamere en ven offentligt?",
-    "Hvem her er mest tilbøjelig til at blamere sig selv offentligt?",
-    "Hvem her er mest tilbøjelig til at komme med en sarkastisk kommentar?",
-    "Hvem her er mest tilbøjelig til at vinde i et løb?",
-    "Hvem her er mest tilbøjelig til at røbe en hemmelighed?",
-    "Hvem her er mest tilbøjelig til at trække sig tilbage på landet?",
-    "Hvem her er mest tilbøjelig til at trække sig tilbage i en by?",
-    "Hvem her er mest tilbøjelig til at bruge mest på tøj?",
-    "Hvem her er mest tilbøjelig til at give penge til velgørenhed?",
-    "Hvem her er mest tilbøjelig til at lave frivilligt arbejde?",
-    "Hvem her er mest tilbøjelig til at forsvinde fra vennekredsen?",
-    "Hvem her er mest tilbøjelig til at stjæle i en butik?",
-    "Hvem her er mest tilbøjelig til at skide i naturen?",
-    "Hvem her er mest tilbøjelig til at give skylden for noget på en anden?",
-    "Hvem her er mest tilbøjelig til at lyve på deres CV?",
-    "Hvem her er mest tilbøjelig til at gå en uge uden at tage et bad?",
-    "Hvem her er mest tilbøjelig til at flirte med bartenderen for at få en gratis drink?",
-    "Hvem her er mest tilbøjelig til at blive spurgt om deres nummer?",
-    "Hvem her er mest tilbøjelig til at have en stripper til deres polterabend?",
-    "Hvem her er mest tilbøjelig til at drikke for meget?",
-    "Hvem her er mest tilbøjelig til at danse på bordet?",
-    "Hvem her er mest tilbøjelig til at vågne op med en tatovering?",
-    "Hvem her er mest tilbøjelig til at flirte med en dørmand?",
-    "Hvem her er mest tilbøjelig til at være den første ved karaoke?",
-    "Hvem her er mest tilbøjelig til at være den sidste person stående?",
-    "Hvem her er mest tilbøjelig til at fare vild på en bytur?",
-    "Hvem her er mest tilbøjelig til at holde polterabend på Ibiza?",
-    "Hvem her er mest tilbøjelig til at vinde i lerdueskydning?",
-    "Hvem her er mest tilbøjelig til at være dygtig til pole-dancing?",
-    "Hvem her er mest tilbøjelig til at vinde i gokart?",
-    "Hvem her er mest tilbøjelig til at være den første på dansegulvet?",
-    "Hvem her er mest tilbøjelig til at få en drink købt til dem?",
-    "Hvem her er mest tilbøjelig til at vågne op uden tømmermænd?"
+    "Drik selv 2 slurke",
+    "Drik selv 3 slurke",
+    "Drik selv 4 slurke",
+    "Drik selv 5 slurke",
+    "Uddel 2 slurke",
+    "Uddel 3 slurke",
+    "Uddel 4 slurke",
+    "Uddel 5 slurke",
+    "Tissekort [1]",
+    "Tissekort [2]",
+    "Tissekort [3]",
+    "Tissekort [4]",
+    "Kategori [1]",
+    "Kategori [2]",
+    "Kategori [3]",
+    "Kategori [4]",
+    "Heaven [1]",
+    "Heaven [2]",
+    "Heaven [3]",
+    "Heaven [4]",
+    "Lav en ny regel [1]",
+    "Lav en ny regel [2]",
+    "Lav en ny regel [3]",
+    "Lav en ny regel [4]",
+    "Alle af hankøn skal skåle [1]",
+    "Alle af hankøn skal skåle [2]",
+    "Alle af hankøn skal skåle [3]",
+    "Alle af hankøn skal skåle [4]",
+    "Alle af hunkøn skal skåle [1]",
+    "Alle af hunkøn skal skåle [2]",
+    "Alle af hunkøn skal skåle [3]",
+    "Alle af hunkøn skal skåle [4]",
+    "Kongen [1]",
+    "Kongen [2]",
+    "Kongen [3]",
+    "Kongen [4]",
+    "Vandfald [1]",
+    "Vandfald [2]",
+    "Vandfald [3]",
+    "Vandfald [4]"
 ]
 
-# Function to get a random statement that hasn't been displayed yet
-def get_random_statement():
+# Function to get a random card that hasn't been displayed yet
+def get_random_card():
     # Retrieve or initialize the displayed cards for the current session
     displayed_cards = st.session_state.get("displayed_cards", [])
 
@@ -120,27 +63,27 @@ def get_random_statement():
     if len(displayed_cards) == len(cards):
         return None  # Return None to indicate no more cards
 
-    # Get a random statement that hasn't been displayed yet
-    statement = random.choice([s for s in cards if s not in displayed_cards])
+    # Get a random card that hasn't been displayed yet
+    card = random.choice([s for s in cards if s not in displayed_cards])
 
-    # Add the statement to the set of displayed cards
-    displayed_cards.append(statement)
+    # Add the card to the set of displayed cards
+    displayed_cards.append(card)
 
     # Update the displayed cards in the session state
     st.session_state.displayed_cards = displayed_cards
 
-    return statement
+    return card
 
 col1, col2, col3 = st.columns(3)
 
-# Button to display a random statement
-if col2.button("Nyt udsagn :new:"):
-    random_statement = get_random_statement()
+# Button to display a random card
+if col2.button("Nyt kort :new:"):
+    random_card = get_random_card()
 
-    if random_statement is not None:
-        st.info(f"{random_statement}")
+    if random_card is not None:
+        st.info(f"{random_card}")
     else:
-        st.info("Ikke flere udsagn tilbage")
+        st.info("Spillet er slut")
 
 
 with st.expander("Regler"):
@@ -156,4 +99,4 @@ with st.expander("Regler"):
 
     """
 )
-    
+
