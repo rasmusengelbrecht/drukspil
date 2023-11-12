@@ -12,7 +12,7 @@ st.markdown(
 )
 
 
-st.video("https://www.youtube.com/watch?v=oo9y-ndmjrs&ab_channel=RogerMendez")
+st.video("https://www.youtube.com/watch?v=jv18kaukcfk&ab_channel=An1ka101")
 
 
 with st.expander("Regler"):
