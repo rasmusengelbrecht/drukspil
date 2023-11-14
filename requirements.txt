@@ -1,2 +1,6 @@
 streamlit
 streamlit-extras
+matplotlib
+numpy
+pandas
+Pillow
