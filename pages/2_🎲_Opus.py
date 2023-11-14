@@ -14,6 +14,12 @@ st.markdown(
 
 with st.expander("Start musikken"):
     st.video("https://www.youtube.com/watch?v=jv18kaukcfk&ab_channel=An1ka101")
+    st.markdown("""
+    ___
+    ### Vil du hellere afspille i Spotify?
+    <iframe style="border-radius:12px" src="https://open.spotify.com/embed/track/3v2oAQomhOcYCPPHafS3KV?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <br><br>
+    """, unsafe_allow_html=True)
 
 def roll_dice():
     return random.randint(1, 6)

@@ -43,5 +43,11 @@ def run():
         if træmand:
             switch_page("træmand")
 
+    with col3:
+        tarot = st.button("🎴 Spil Tarot")
+        if tarot:
+            switch_page("tarot")    
+
+
 if __name__ == "__main__":
     run()
