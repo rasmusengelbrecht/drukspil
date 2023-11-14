@@ -47,9 +47,9 @@ if st.button("Se din skæbne 🔮"):
 		name_img_future = reading['img'].iloc[2]
 
 		# open images
-		img_past = PIL.Image.open(f'/workspaces/data/{name_img_past}')
-		img_present = PIL.Image.open(f'/workspaces/data/{name_img_present}')
-		img_future = PIL.Image.open(f'/workspaces/data/{name_img_future}')
+		img_past = PIL.Image.open(f'./data/{name_img_past}')
+		img_present = PIL.Image.open(f'./data/{name_img_present}')
+		img_future = PIL.Image.open(f'./data/{name_img_future}')
 
 		# plot images
 		fig, (past, present, future) = plt.subplots(1, 3, figsize=(5, 3), facecolor='#0e1117')
