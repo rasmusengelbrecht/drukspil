@@ -37,9 +37,6 @@ df = df.fillna('')
 if st.button("Se din skæbne 🔮"):  
 
 		reading = df.sample(n = 3).reset_index(drop=True)  
-		
-		today = datetime.date.today()
-		date = today.strftime("%d-%B-%Y")
 				
 		# identify images
 		name_img_past = reading['img'].iloc[0]

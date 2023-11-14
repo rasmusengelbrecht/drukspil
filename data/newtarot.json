@@ -1,0 +1,259 @@
+
+{
+    "description": "tarot cards and basic information about them, as well as references to corresponding scans",
+    "cards": [
+      {
+        "name": "The Fool",
+        "img": "m00.jpg",
+        "challenge": "Take a leap of faith! Choose someone at the party and convince them to join you in a spontaneous dance-off. Loser takes a sip!"
+      },
+      {
+        "name": "The Magician",
+        "img": "m01.jpg",
+        "challenge": "Embrace your inner magician. Perform a magic trick for the group. If they're not amazed, take three sips."
+      },
+      {
+        "name": "The High Priestess",
+        "img": "m02.jpg",
+        "challenge": "Channel your mysterious side. Share an interesting secret with the group. If they can't guess whether it's true or false, they drink."
+      },
+      {
+        "name": "The Empress",
+        "img": "m03.jpg",
+        "challenge": "Embrace luxury! Compliment someone's outfit extravagantly. If they blush, they take a sip; if not, you take one."
+      },
+      {
+        "name": "The Emperor",
+        "img": "m04.jpg",
+        "challenge": "Assume authority! Give someone at the party an order, and if they follow it, they're safe. If not, they drink."
+      },
+      {
+        "name": "The Hierophant",
+        "img": "m05.jpg",
+        "challenge": "Confess your silliest misdeed to the group. If they forgive you, you're safe; if not, it's time for a sip."
+      },
+      {
+        "name": "The Lovers",
+        "img": "m06.jpg",
+        "challenge": "Celebrate new connections! Take a shot with someone you've never spoken to before. Cheers to unexpected friendships!"
+      },
+      {
+        "name": "The Chariot",
+        "img": "m07.jpg",
+        "challenge": "Claim victory on the dance floor! Challenge someone to a dance battle. The winner gets to assign a sip to the loser."
+      },
+      {
+        "name": "Strength",
+        "img": "m08.jpg",
+        "challenge": "Show your inner strength! Flex your muscles for everyone. The first person to mimic your flex accurately is safe; others take a sip."
+      },
+      {
+        "name": "The Hermit",
+        "img": "m09.jpg",
+        "challenge": "Embrace solitude! Take a moment alone to come up with an impromptu poem. Share it with the group, and if they applaud, you're safe; if not, drink up."
+      },
+      {
+        "name": "Wheel of Fortune",
+        "img": "m10.jpg",
+        "challenge": "Leave it to fate! Let someone else at the party make a decision for you. If it turns out well, they're safe; if not, they drink."
+      },
+      {
+        "name": "Justice",
+        "img": "m11.jpg",
+        "challenge": "Hold a mini court session! Choose two people to state their cases for a silly dispute. The group votes, and the 'guilty' party takes a sip."
+      },
+      {
+        "name": "The Hanged Man",
+        "img": "m12.jpg",
+        "challenge": "Reveal a hidden talent! Whether it's juggling or singing, perform for the group. If they applaud, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Death",
+        "img": "m13.jpg",
+        "challenge": "Embrace change! Swap drinks with someone else at the party. If you both like the new drink, you're safe; if not, both take a sip."
+      },
+      {
+        "name": "Temperance",
+        "img": "m14.jpg",
+        "challenge": "Find balance! Walk a straight line (real or imaginary) with a drink in hand. If you succeed, choose someone else to take a sip; if not, it's your turn."
+      },
+      {
+        "name": "The Devil",
+        "img": "m15.jpg",
+        "challenge": "Confront temptation! Choose a partner for a quick game of rock-paper-scissors. The loser takes a sip, and the winner revels in resisting the 'devilish' temptation."
+      },
+      {
+        "name": "The Tower",
+        "img": "m16.jpg",
+        "challenge": "Build and destroy! Use building blocks or cards to create a tower. Knock it down, and everyone takes a sip. If it stands, you're safe."
+      },
+      {
+        "name": "The Star",
+        "img": "m17.jpg",
+        "challenge": "Embrace your celestial side! Share your zodiac sign and a fun fact about it. If someone else knows a fact about your sign, they're safe; if not, they drink."
+      },
+      {
+        "name": "The Moon",
+        "img": "m18.jpg",
+        "challenge": "Howl at the moon! Choose a friend to join you in a howling competition. The most enthusiastic howler is safe; the others take a sip."
+      },
+      {
+        "name": "The Sun",
+        "img": "m19.jpg",
+        "challenge": "Bask in the sunlight! Share the happiest moment of your week. If it brings smiles, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Judgement",
+        "img": "m20.jpg",
+        "challenge": "Face the past! Share a funny or embarrassing story from your past. If the group laughs with you, you're safe; if not, take a sip."
+      },
+      {
+        "name": "The World",
+        "img": "m21.jpg",
+        "challenge": "Celebrate achievements! Share a recent accomplishment, and everyone raises their glasses for a toast. Cheers to your success!"
+      },
+      {
+        "name": "Ace of Cups",
+        "img": "c01.jpg",
+        "challenge": "Dive into romance! Propose a toast to love and take a sip. If someone else proposes a toast, they're safe; if not, they take a sip."
+      },
+      {
+        "name": "Two of Cups",
+        "img": "c02.jpg",
+        "challenge": "Spill the tea! Share a secret crush or a funny dating story. If it gets laughs or awws, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Three of Cups",
+        "img": "c03.jpg",
+        "challenge": "Unleash your unconventional side! Perform a quirky dance move for the group. If it gets applause, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Four of Cups",
+        "img": "c04.jpg",
+        "challenge": "Satisfy a restless lover! Offer to refill someone's drink. If they decline, they drink; if not, you're safe."
+      },
+      {
+        "name": "Five of Cups",
+        "img": "c05.jpg",
+        "challenge": "Face the music! Share a breakup story or a failed endeavor. If the group sympathizes, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Six of Cups",
+        "img": "c06.jpg",
+        "challenge": "Share the joy! Give someone a compliment, and if they return the favor, you're safe; if not, both take a sip."
+      },
+      {
+        "name": "Seven of Cups",
+        "img": "c07.jpg",
+        "challenge": "Cut through illusions! Challenge someone to a quick game of charades. If they guess your word, they're safe; if not, they take a sip."
+      },
+      {
+        "name": "Eight of Cups",
+        "img": "c08.jpg",
+        "challenge": "Move on from the past! Encourage someone to join you in a symbolic gesture of leaving something behind. If they agree, you're safe; if not, both take a sip."
+      },
+      {
+        "name": "Nine of Cups",
+        "img": "c09.jpg",
+        "challenge": "Make a wish! Share a personal desire or goal. If the group supports it, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Ten of Cups",
+        "img": "c10.jpg",
+        "challenge": "Build family bonds! Propose a group activity that fosters togetherness. If they agree, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Page of Cups",
+        "img": "c11.jpg",
+        "challenge": "Embrace the watery vibe! Share a dreamy or creative idea. If someone else appreciates it, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Knight of Cups",
+        "img": "c12.jpg",
+        "challenge": "Rally around a cause! Propose a fun and passionate group activity. If they're on board, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Queen of Cups",
+        "img": "c13.jpg",
+        "challenge": "Sway with emotion! Express an opinion or idea with deep emotion. If it resonates, you're safe; if not, take a sip."
+      },
+      {
+        "name": "King of Cups",
+        "img": "c14.jpg",
+        "challenge": "Foster fairness and tolerance! Settle a friendly debate or dispute with a fair decision. If they agree, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Ace of Swords",
+        "img": "s01.jpg",
+        "challenge": "Make a decisive move! Challenge someone to a quick game of rock-paper-scissors. Winner assigns a sip to the loser."
+      },
+      {
+        "name": "Two of Swords",
+        "img": "s02.jpg",
+        "challenge": "Refuse to fight! Propose a toast to peace and cooperation. If someone else proposes a toast, they're safe; if not, they take a sip."
+      },
+      {
+        "name": "Three of Swords",
+        "img": "s03.jpg",
+        "challenge": "Turn pain into gain! Share a past heartbreak or tough experience. If it inspires empathy, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Four of Swords",
+        "img": "s04.jpg",
+        "challenge": "Postpone decisions! Take a break from the party chaos and meditate for a minute. If you return refreshed, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Five of Swords",
+        "img": "s05.jpg",
+        "challenge": "Guard against betrayal! Choose a partner for a quick trust-building exercise. If you succeed, you're both safe; if not, both take a sip."
+      },
+      {
+        "name": "Six of Swords",
+        "img": "s06.jpg",
+        "challenge": "Navigate unexpected consequences! Blindfold someone and guide them through a simple obstacle course. If they succeed, you're safe; if not, both take a sip."
+      },
+      {
+        "name": "Seven of Swords",
+        "img": "s07.jpg",
+        "challenge": "Question trust! Choose someone to answer three random questions. If their answers seem truthful, they're safe; if not, they take a sip."
+      },
+      {
+        "name": "Eight of Swords",
+        "img": "s08.jpg",
+        "challenge": "Break free from victimhood! Share a past challenge you've overcome. If the group applauds, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Nine of Swords",
+        "img": "s09.jpg",
+        "challenge": "Avoid future regrets! Propose a lighthearted challenge for someone to undertake. If they succeed, you're safe; if not, they take a sip."
+      },
+      {
+        "name": "Ten of Swords",
+        "img": "s10.jpg",
+        "challenge": "Put off plans! Choose someone to postpone a decision or action. If they agree, you're safe; if not, both take a sip."
+      },
+      {
+        "name": "Page of Swords",
+        "img": "s11.jpg",
+        "challenge": "Embrace intellectual curiosity! Share a fascinating fact with the group. If it sparks interest, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Knight of Swords",
+        "img": "s12.jpg",
+        "challenge": "Avoid blunders! Challenge someone to a quick word association game. If they respond swiftly, they're safe; if not, they take a sip."
+      },
+      {
+        "name": "Queen of Swords",
+        "img": "s13.jpg",
+        "challenge": "Use clever communication! Describe an everyday object in a creative and entertaining way. If the group appreciates it, you're safe; if not, take a sip."
+      },
+      {
+        "name": "King of Swords",
+        "img": "s14.jpg",
+        "challenge": "Exercise sharp decision-making! Settle a playful dispute with a decisive ruling. If they accept it, you're safe; if not, take a sip."
+      },
+      {
+        "name": "Ace of Wands",
+        "img": "w01.jpg",
+        "challenge": "Walk softly and carry a big stick! Choose someone for a playful 'duel' using rolled-up paper as swords. Winner assigns a sip
+  
