@@ -28,7 +28,7 @@ col1, col2, col3 = st.columns(3)
 
 # Button to roll the dice
 if col2.button("Rul terningen"):
-    time.sleep(2)
+    time.sleep(1)
     result = roll_dice()
     if result == 6:
         st.success(f"Juhuu! 🎉 Du slog {result} - Send den videre")
