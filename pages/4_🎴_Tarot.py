@@ -24,7 +24,7 @@ def load_data(filename):
     return data
 
 #data=load_data('/workspaces/data/tarot-images.json') 
-data=load_data('/workspaces/data/tarot-images.json')
+data=load_data('./data/tarot-images.json')
 df = pd.json_normalize(data['cards'])
 
 #st.write(df)
